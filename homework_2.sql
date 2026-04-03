@@ -42,7 +42,7 @@ create table product (
     asgrp integer not null,
     brand integer not null,
     matcateg varchar(4) not null,
-    matdirec integer,
+    matdirec varchar(20),
     txt text
 )
     with (appendonly = true, orientation = row, compresstype = zstd, compresslevel = 5)
